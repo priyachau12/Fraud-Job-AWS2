@@ -642,16 +642,19 @@ const JobForm = ({ setJobData, setLoading, setError }) => {
     setError(null);
     try {
       // const response = await axios.post("https://job-validator-2.onrender.com//api/analyze2", {
-      const response = await axios.post("http://localhost:5000/api/analyze2", {
-        url: url || null,
-        job_post: jobPost || null,
-        platform: platform || null,
-        has_logo: hasLogo,
-        experience: experience || null,
-        education: education || null,
-        employment: employment || null,
-        hasQuestion,
-      });
+      const response = await axios.post(
+        "http://65.2.187.110:5000/api/analyze2",
+        {
+          url: url || null,
+          job_post: jobPost || null,
+          platform: platform || null,
+          has_logo: hasLogo,
+          experience: experience || null,
+          education: education || null,
+          employment: employment || null,
+          hasQuestion,
+        }
+      );
 
       setJobData(response.data);
     } catch (error) {

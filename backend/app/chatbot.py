@@ -46,7 +46,7 @@ Return only the array of extracted values, with empty strings for missing values
     try:
         completion = client.chat.completions.create(
             extra_headers={
-                "HTTP-Referer": "http://localhost:5000",
+                "HTTP-Referer": "http://65.2.187.110:5000",
                 "X-Title": "Job Post Analyzer",
             },
             model="openai/gpt-4.1",

@@ -47,7 +47,7 @@ Thumbs.db
 .idea/
 
 # Ignore build files
-dist/
+# dist/
 build/
 *.class
 *.out
@@ -59,6 +59,6 @@ build/
 *~
 
 # Ignore package managers
-package-lock.json
+# package-lock.json
 yarn.lock
 
